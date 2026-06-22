@@ -1,0 +1,93 @@
+Hamburger menu 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Navigation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fafafa;
+        }
+
+        
+        .navbar {
+            background-color:#333;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        
+        .menu-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 26px; 
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+        }
+
+        
+        #menu {
+            display: none; 
+            background-color: #f4f4f4;
+            width: 200px;
+            position: absolute;
+            top: 50px; 
+            left: 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+
+        
+        #menu a {
+            display: block;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #menu a:last-child {
+            border-bottom: none;
+        }
+
+        #menu a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Members</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            let menu = document.getElementById("menu");
+            
+            // Evaluates hidden or visible logic smoothly
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
