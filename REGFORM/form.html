@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+        <fieldset>
+            <label for="name">Enter your full name</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="email">Enter your email</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="pass">Enter your password</label><br>
+<input type="password" id="pass" name="pass" required><br><br>
+
+<label for="confirm_pass">Confirm your password</label><br>
+<input type="password" id="confirm_pass" name="confirm_pass" required><br><br>
+
+            <label>Enter your gender</label><br>
+            <input type="radio" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="radio" name="gender" value="others"> Others <br><br>
+
+            <label>Enter your Address:</label><br>
+            <textarea rows="4" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Apply">
+        </fieldset>
+    </form>
+    <style>
+body{
+    background-color: cornflowerblue;
+    font-family: Arial, sans-serif;
+}
+input, textarea{
+    margin-bottom:10px;
+}
+h2{
+    text-align: center;
+}
+</style>
+
+</body>
+</html>
